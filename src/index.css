@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eeeeee;
+  font-size: 80%;
+  letter-spacing: 1px;
+}
+/******* Global styles *******/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-heading {
+  display: inline-block;
+  margin: 8px;
+  font-weight: 700;
+}
+
+.centered-container {
+  max-width: 1180px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+input,
+select {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  padding: 16px;
+  margin: 2px;
+}
+
+.centered-container.sign-up-div {
+  display: flex;
+  flex-direction: column;
+}
+
+/******* Navbar *******/
+nav {
+  padding: 16px;
+  background-color: #615dfa;
+}
+
+nav p {
+  color: #fff;
+  font-weight: 700;
+}
+
+.logged-in-as {
+  float: right;
+  margin-right: 16px;
+}
+
+.sign-out-button {
+  float: right;
+}
+
+.signup-btn-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/******* Home page banner *******/
+.cover-banner {
+  min-height: 1080px;
+  background-image: url("/social.jpeg");
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-items {
+  text-align: center;
+}
+
+.banner-items h2 {
+  font-size: 600%;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.banner-p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.section-banner {
+  min-height: 160px;
+  padding: 52px 60px 0 200px;
+  border-radius: 12px;
+  position: relative;
+  width: 90%;
+}
+
+.section-banner h1 {
+  font-weight: 700;
+  color: #fff;
+}
+
+.section-banner p {
+  font-weight: 500;
+  color: #fff;
+}
+
+.section-banner .section-banner-icon {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+.section-banner .section-banner-icon {
+  width: 185px;
+}
+
+/******* Create page styles *******/
+.create-post-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 50px;
+  flex-direction: column;
+}
+
+/******* Messages styles *******/
+.card {
+  width: 25%;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 3px 5px 20px 0 rgb(94 92 154 / 12%);
+}
+
+.card h3 {
+  border-bottom: #eaeaf5 1px solid;
+  margin-bottom: 35px;
+}
+
+.messages-container {
+}
+
+.new-message-form {
+  padding: 16px 0;
+  display: flex;
+  position: relative;
+}
+
+.new-message-form button {
+  width: 64px;
+  position: absolute;
+  top: 5;
+  right: 0;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #23d2e2;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 10px 10px 10px 10px;
+  padding: 25px 45px 18px 45px;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+}
+
+.new-message-form input {
+  flex: 8;
+}
+
+.box {
+  width: 300px;
+  background-color: #3e3f5e;
+  padding: 20px;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position: relative;
+  border-radius: 12px;
+}
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #3e3f5e;
+  border-top: 10px solid #3e3f5e;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
+}
+
+/******* Button styles *******/
+button {
+  background-color: green;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  padding: 16px;
+}
+
+.btn.btn-rounded {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #23d2e2;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 10px 10px 10px 10px;
+  padding: 18px 60px 18px 60px;
+  color: #fff;
+}
+
+.btn.btn-rounded.sign-in-btn {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #3e3f5e;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 10px 10px 10px 10px;
+  padding: 18px 60px 18px 60px;
+  color: #fff;
+}
+
+.btn.btn-primary {
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #23d2e2;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+  color: #fff;
+}
+
+/******* Group styles *******/
+.section-heading {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  font-weight: 700;
+  color: #3e3f5e;
+  text-transform: uppercase;
+  border-bottom: #8f91ac solid 1px;
+}
+
+.group-banner {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 300px;
+  margin-top: 10px;
+  box-shadow: 3px 5px 20px 0 rgb(94 92 154 / 12%);
+}
+
+.group-header {
+  height: 124px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #fff;
+  margin-bottom: 25px;
+  box-shadow: 3px 5px 20px 0 rgb(94 92 154 / 12%);
+  position: relative;
+  display: flex;
+}
+
+.group-stats {
+  margin-left: 15px;
+  color: #3e3f5e;
+  font-weight: 600;
+}
+
+.group-stats h1 {
+  color: #3e3f5e;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.group-stats p {
+  text-transform: uppercase;
+}
+
+.list-item {
+  align-items: center;
+  /* border-bottom: 1px solid #ddd; */
+  display: flex;
+  padding: 16px;
+}
+
+.list-item-data {
+  flex: 1;
+}
+
+.accept-btn {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #23d2e2;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 10px 10px 10px 10px;
+  color: #fff;
+  box-shadow: 3px 5px 20px 0 rgb(94 92 154 / 12%);
+}
+
+.reject-btn {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #3e3f5e;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 10px 10px 10px 10px;
+  color: #fff;
+  box-shadow: 3px 5px 20px 0 rgb(94 92 154 / 12%);
+}
+
+.public-icon {
+  width: 20px;
+}
+
+.icon-span {
+  border: white solid 1px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 12px;
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  background-color: white;
+  box-shadow: 3px 5px 20px 0 rgb(94 92 154 / 12%);
+}
+
+/******** Footer styles *******/
+.footer-links {
+  margin-top: 16px;
+}
