@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export function MyGroupsListItem({ group }) {
     return (
-        <div className="card m-2">
+        <div className="card m-2 list-card">
             <div className="card-body">
                 <div className="list-item">
                     <div className="list-item-data">

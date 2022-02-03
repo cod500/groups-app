@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/grouplist.css';
 import { Link } from 'react-router-dom';
 import { GroupsList } from './GroupsList';
 import { GroupsListItem } from './GroupsListItem';
@@ -25,7 +26,7 @@ export function GroupsListPage() {
                 <div className="my-group-div">
                     <h1 className="section-heading">My Groups</h1>
 
-                    <div className="d-flex">
+                    <div className="group-list">
                         <GroupsList
                             isLoading={isLoading}
                             groups={userGroups}
@@ -35,7 +36,7 @@ export function GroupsListPage() {
             </div>
             <div className="my-group-div">
                 <h1 className="section-heading">Other Groups</h1>
-                <div className="d-flex">
+                <div className="group-list">
                     <GroupsList
                         isLoading={isLoading}
                         groups={notUserGroups}

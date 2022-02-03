@@ -42,6 +42,7 @@ select {
 .centered-container.sign-up-div {
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
 }
 
 /******* Navbar *******/
@@ -154,12 +155,11 @@ nav p {
   padding: 16px 0;
   display: flex;
   position: relative;
+  margin: 0 10px;
 }
 
 .new-message-form button {
-  width: 64px;
-  position: absolute;
-  top: 5;
+  top: 17px;
   right: 0;
   font-size: 16px;
   font-weight: 700;
@@ -170,6 +170,7 @@ nav p {
   padding: 25px 45px 18px 45px;
   color: #fff;
   justify-content: center;
+  align-items: center;
   display: flex;
 }
 
@@ -250,7 +251,19 @@ button {
 }
 
 /******* Group styles *******/
+.group-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list-card {
+  max-width: 500px;
+  min-width: 300px;
+}
+
 .section-heading {
+  margin-left: 10px;
   padding-bottom: 16px;
   padding-top: 16px;
   font-weight: 700;
@@ -259,7 +272,17 @@ button {
   border-bottom: #8f91ac solid 1px;
 }
 
+.groups-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .group-banner {
+  background-size: cover;
+  width: 90%;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   height: 300px;
@@ -268,6 +291,7 @@ button {
 }
 
 .group-header {
+  width: 90%;
   height: 124px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -352,4 +376,56 @@ button {
 /******** Footer styles *******/
 .footer-links {
   margin-top: 16px;
+}
+
+/******** Responsive group cards *******/
+@media screen and (max-width: 1122px) {
+  .group-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logged-in-as {
+    display: none;
+  }
+
+  .btn.btn-rounded,
+  .btn.btn-primary {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .group-banner {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-banner {
+    display: none;
+  }
+
+  .group-banner {
+    display: none;
+  }
+
+  .group-header {
+    width: 100%;
+  }
+
+  .app-heading {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .new-message-form button {
+    padding: 10px 20px;
+  }
+
+  .footer-links {
+    font-size: 10px;
+  }
 }
